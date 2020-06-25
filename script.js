@@ -63,6 +63,4 @@ function checkForWinner() {
     }
 }
 
-userScore = 0;
-compScoreValue = 0;
 para.textContent = "Choose rock, paper, or scissors.";
