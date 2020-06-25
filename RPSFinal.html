@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                background-color: #9affe3;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            #container {
+                margin-top: 5vw;
+                margin-left: 32vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 35vw;
+            }
+            .btn {
+                border-radius: 5px;
+                background-color: blue;
+                border-color: blue;
+                width: 200px;
+                height: 150px;
+                color: white;
+                font-weight: bold;
+                font-size: large;
+            }
+            #para {
+                margin-top: 5vw;
+                width: 50vw;
+                margin-left: 25vw;
+            }
+            #scoreBox {
+                display: flex;
+                flex-direction: column;
+                background-color: darkgray;
+                justify-content: space-around;
+                width: 20vw;
+                font-size: large;
+                align-self: center;
+                margin-top: 15vw;
+            }
+            #playerTags {
+                display: flex;
+                flex-direction: row;
+                background-color: gray;
+                justify-content: space-around;
+            }
+            #scoreValues {
+                display: flex;
+                flex-direction: row;
+                background-color: gray;
+                justify-content: space-around;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scoreBox">
+            <div id="playerTags">
+                <div id="userPlayer">Player</div>
+                <div id="compPlayer">Computer</div>
+            </div>
+            <div id="scoreValues">
+                <div id="userScore"></div>
+                <div id="compScoreValue"></div>
+            </div>
+        </div>
+        <div id="container">
+            <button onclick="playGame('rock')" class="btn" id="rockBtn">Rock</button>
+            <button onclick="playGame('paper')" class="btn" id="paperBtn">Paper</button>
+            <button onclick="playGame('scissors')" class="btn" id="scissorsBtn">Scissors</button>
+        </div>
+        <div id="text">
+            <p id="para"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
